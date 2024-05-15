@@ -1,0 +1,26 @@
+.logo {
+    width: 75px;
+}
+
+header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #007DBE;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    font-weight: 700;
+}
+
+nav ul li {
+    background-color: #00B5E5;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin: 0 10px;
+}
