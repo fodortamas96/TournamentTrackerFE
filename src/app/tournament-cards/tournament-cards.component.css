@@ -1,0 +1,23 @@
+.tournament {
+    background-color: #BBC023;
+    border-radius: 30px;
+    width: 300px;
+    box-shadow: 0px 0px 20px 0px #000;
+}
+
+.tournament-name {
+    background-color: #007DBE;
+    text-align: center;
+    color: #E7E4E9;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    padding: 10px 20px 20px 20px;
+}
+
+.tournament-location, .tournament-typecategory {
+    padding: 10px 20px 20px 20px;
+}
+
+.tournament-surface {
+    padding: 10px 20px 20px 20px;
+}
