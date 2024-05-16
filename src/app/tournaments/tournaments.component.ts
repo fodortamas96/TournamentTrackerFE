@@ -14,12 +14,166 @@ import { Tournament } from '../tournament';
   styleUrl: './tournaments.component.css'
 })
 export class TournamentsComponent {
-  tournament: Tournament = {
-    eventType: 'ATP',
-    category: 1000,
-    city: 'Madrid',
-    country: 'Spain',
-    surface: 'Clay',
-    name: 'Mutua Madrid Open'
-  };
+  tournaments: Tournament[] = [
+    {
+      eventType: 'ATP',
+      category: 1000,
+      city: 'Madrid',
+      country: 'Spain',
+      surface: 'Clay',
+      name: 'Mutua Madrid Open'
+    },
+    {
+      eventType: 'ATP',
+      category: 1000,
+      city: 'Madrid',
+      country: 'Spain',
+      surface: 'Clay',
+      name: 'Mutua Madrid Open'
+    },
+    {
+      eventType: 'ATP',
+      category: 1000,
+      city: 'Madrid',
+      country: 'Spain',
+      surface: 'Clay',
+      name: 'Mutua Madrid Open'
+    },
+    {
+      eventType: 'ATP',
+      category: 1000,
+      city: 'Madrid',
+      country: 'Spain',
+      surface: 'Clay',
+      name: 'Mutua Madrid Open'
+    },
+    {
+      eventType: 'ATP',
+      category: 1000,
+      city: 'Madrid',
+      country: 'Spain',
+      surface: 'Clay',
+      name: 'Mutua Madrid Open'
+    },
+    {
+      eventType: 'ATP',
+      category: 1000,
+      city: 'Madrid',
+      country: 'Spain',
+      surface: 'Clay',
+      name: 'Mutua Madrid Open'
+    },
+    {
+      eventType: 'ATP',
+      category: 1000,
+      city: 'Madrid',
+      country: 'Spain',
+      surface: 'Clay',
+      name: 'Mutua Madrid Open'
+    },
+    {
+      eventType: 'ATP',
+      category: 1000,
+      city: 'Madrid',
+      country: 'Spain',
+      surface: 'Clay',
+      name: 'Mutua Madrid Open'
+    },
+    {
+      eventType: 'ATP',
+      category: 1000,
+      city: 'Madrid',
+      country: 'Spain',
+      surface: 'Clay',
+      name: 'Mutua Madrid Open'
+    },
+    {
+      eventType: 'ATP',
+      category: 1000,
+      city: 'Madrid',
+      country: 'Spain',
+      surface: 'Clay',
+      name: 'Mutua Madrid Open'
+    },
+    {
+      eventType: 'ATP',
+      category: 1000,
+      city: 'Madrid',
+      country: 'Spain',
+      surface: 'Clay',
+      name: 'Mutua Madrid Open'
+    },
+    {
+      eventType: 'ATP',
+      category: 1000,
+      city: 'Madrid',
+      country: 'Spain',
+      surface: 'Clay',
+      name: 'Mutua Madrid Open'
+    },
+    {
+      eventType: 'ATP',
+      category: 1000,
+      city: 'Madrid',
+      country: 'Spain',
+      surface: 'Clay',
+      name: 'Mutua Madrid Open'
+    },
+    {
+      eventType: 'ATP',
+      category: 1000,
+      city: 'Madrid',
+      country: 'Spain',
+      surface: 'Clay',
+      name: 'Mutua Madrid Open'
+    },
+    {
+      eventType: 'ATP',
+      category: 1000,
+      city: 'Madrid',
+      country: 'Spain',
+      surface: 'Clay',
+      name: 'Mutua Madrid Open'
+    },
+    {
+      eventType: 'ATP',
+      category: 1000,
+      city: 'Madrid',
+      country: 'Spain',
+      surface: 'Clay',
+      name: 'Mutua Madrid Open'
+    },
+    {
+      eventType: 'ATP',
+      category: 1000,
+      city: 'Madrid',
+      country: 'Spain',
+      surface: 'Clay',
+      name: 'Mutua Madrid Open'
+    },
+    {
+      eventType: 'ATP',
+      category: 1000,
+      city: 'Madrid',
+      country: 'Spain',
+      surface: 'Clay',
+      name: 'Mutua Madrid Open'
+    },
+    {
+      eventType: 'ATP',
+      category: 1000,
+      city: 'Madrid',
+      country: 'Spain',
+      surface: 'Clay',
+      name: 'Mutua Madrid Open'
+    },
+    {
+      eventType: 'ATP',
+      category: 1000,
+      city: 'Madrid',
+      country: 'Spain',
+      surface: 'Clay',
+      name: 'Mutua Madrid Open'
+    }
+  ];
 }
