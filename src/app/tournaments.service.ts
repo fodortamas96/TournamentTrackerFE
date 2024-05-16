@@ -1,177 +1,18 @@
 import { Injectable } from '@angular/core';
 import { Tournament } from './tournament';
+import { HttpClient } from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root'
 })
 
 export class TournamentsService {
-  tournaments: Tournament[] = [
-    {
-      eventType: 'ATP',
-      category: 1000,
-      city: 'Madrid',
-      country: 'Spain',
-      surface: 'Clay',
-      name: 'Mutua Madrid Open'
-    },
-    {
-      eventType: 'ATP',
-      category: 1000,
-      city: 'Madrid',
-      country: 'Spain',
-      surface: 'Clay',
-      name: 'Mutua Madrid Open'
-    },
-    {
-      eventType: 'ATP',
-      category: 1000,
-      city: 'Madrid',
-      country: 'Spain',
-      surface: 'Clay',
-      name: 'Mutua Madrid Open'
-    },
-    {
-      eventType: 'ATP',
-      category: 1000,
-      city: 'Madrid',
-      country: 'Spain',
-      surface: 'Clay',
-      name: 'Mutua Madrid Open'
-    },
-    {
-      eventType: 'ATP',
-      category: 1000,
-      city: 'Madrid',
-      country: 'Spain',
-      surface: 'Clay',
-      name: 'Mutua Madrid Open'
-    },
-    {
-      eventType: 'ATP',
-      category: 1000,
-      city: 'Madrid',
-      country: 'Spain',
-      surface: 'Clay',
-      name: 'Mutua Madrid Open'
-    },
-    {
-      eventType: 'ATP',
-      category: 1000,
-      city: 'Madrid',
-      country: 'Spain',
-      surface: 'Clay',
-      name: 'Mutua Madrid Open'
-    },
-    {
-      eventType: 'ATP',
-      category: 1000,
-      city: 'Madrid',
-      country: 'Spain',
-      surface: 'Clay',
-      name: 'Mutua Madrid Open'
-    },
-    {
-      eventType: 'ATP',
-      category: 1000,
-      city: 'Madrid',
-      country: 'Spain',
-      surface: 'Clay',
-      name: 'Mutua Madrid Open'
-    },
-    {
-      eventType: 'ATP',
-      category: 1000,
-      city: 'Madrid',
-      country: 'Spain',
-      surface: 'Clay',
-      name: 'Mutua Madrid Open'
-    },
-    {
-      eventType: 'ATP',
-      category: 1000,
-      city: 'Madrid',
-      country: 'Spain',
-      surface: 'Clay',
-      name: 'Mutua Madrid Open'
-    },
-    {
-      eventType: 'ATP',
-      category: 1000,
-      city: 'Madrid',
-      country: 'Spain',
-      surface: 'Clay',
-      name: 'Mutua Madrid Open'
-    },
-    {
-      eventType: 'ATP',
-      category: 1000,
-      city: 'Madrid',
-      country: 'Spain',
-      surface: 'Clay',
-      name: 'Mutua Madrid Open'
-    },
-    {
-      eventType: 'ATP',
-      category: 1000,
-      city: 'Madrid',
-      country: 'Spain',
-      surface: 'Clay',
-      name: 'Mutua Madrid Open'
-    },
-    {
-      eventType: 'ATP',
-      category: 1000,
-      city: 'Madrid',
-      country: 'Spain',
-      surface: 'Clay',
-      name: 'Mutua Madrid Open'
-    },
-    {
-      eventType: 'ATP',
-      category: 1000,
-      city: 'Madrid',
-      country: 'Spain',
-      surface: 'Clay',
-      name: 'Mutua Madrid Open'
-    },
-    {
-      eventType: 'ATP',
-      category: 1000,
-      city: 'Madrid',
-      country: 'Spain',
-      surface: 'Clay',
-      name: 'Mutua Madrid Open'
-    },
-    {
-      eventType: 'ATP',
-      category: 1000,
-      city: 'Madrid',
-      country: 'Spain',
-      surface: 'Clay',
-      name: 'Mutua Madrid Open'
-    },
-    {
-      eventType: 'ATP',
-      category: 1000,
-      city: 'Madrid',
-      country: 'Spain',
-      surface: 'Clay',
-      name: 'Mutua Madrid Open'
-    },
-    {
-      eventType: 'ATP',
-      category: 1000,
-      city: 'Madrid',
-      country: 'Spain',
-      surface: 'Clay',
-      name: 'Mutua Madrid Open'
-    }
-  ];
+  serverUrl = 'http://localhost:3000/tournaments';
+  constructor(private httpClient: HttpClient) {
 
-  constructor() { }
+  }
 
-  getTournaments(): Tournament[] {
-    return this.tournaments;
+  async getTournaments() {
+    return this.httpClient.get<Tournament[]>(this.serverUrl, {observe: 'body', responseType: 'json'});
   }
 }
