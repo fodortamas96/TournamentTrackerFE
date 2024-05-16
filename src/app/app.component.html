@@ -3,13 +3,13 @@
     <img class="logo" src="assets/logo.svg" alt="logo" aria-hidden="true">
     <nav>
       <ul>
-        <li>Main</li>
-        <li>Tournaments</li>
+        <a [routerLink]="['/']"><li>Home</li></a>
+        <a [routerLink]="['/tournaments']"><li>Tournaments</li></a>
         <li>Log In/Log Out</li>
       </ul>
     </nav>
   </header>
   <section class="content">
-    <app-tournaments></app-tournaments>
+    <router-outlet></router-outlet>
   </section>
 </main>

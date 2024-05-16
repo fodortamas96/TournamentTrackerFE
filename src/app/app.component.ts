@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { RouterModule } from '@angular/router';
 import { TournamentsComponent } from './tournaments/tournaments.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
   imports: [
-    RouterOutlet,
+    RouterModule,
     TournamentsComponent
   ],
   templateUrl: './app.component.html',
