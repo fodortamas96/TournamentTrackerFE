@@ -14,7 +14,7 @@ import { Tournament } from '../tournament';
   styleUrl: './tournaments.component.css'
 })
 export class TournamentsComponent {
-  tournamentCard: Tournament = {
+  tournament: Tournament = {
     eventType: 'ATP',
     category: 1000,
     city: 'Madrid',
